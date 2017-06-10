@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Issues List App</string>
+
+    <!--internet connection-->
+    <string name="connect_time_out"> Server Timeout, Please try again.</string>
+    <string name="no_internet"> Please Enable your internet connection.</string>
+    <string name="ok">OK</string>
+    <string name="user">User</string>
+    <string name="updated_at">Updated at</string>
+    <string name="commended_on">Commented On</string>
+</resources>

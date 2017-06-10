@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/parent_lay"
+
+    android:layout_height="match_parent">
+<ScrollView
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/size5"
+            android:paddingLeft="@dimen/size7"
+            android:paddingRight="@dimen/size7"
+            android:paddingTop="@dimen/size5">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size2"
+                android:textAllCaps="false"
+                android:textSize="@dimen/size12"
+                android:typeface="monospace" />
+
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size2"
+                android:paddingLeft="@dimen/size3"
+
+                android:textAllCaps="false"
+                android:textSize="@dimen/size11" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/add_photo"
+                    android:layout_width="@dimen/size30"
+                    android:layout_height="@dimen/size30"
+
+                    android:layout_marginTop="@dimen/size4"
+                    app:civ_border_color="@color/black_color"
+                    app:civ_border_width="0.5dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/size2"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/size11"
+                        android:typeface="monospace" />
+
+                    <TextView
+                        android:id="@+id/updated_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/size2"
+                        android:textAllCaps="false"
+                        android:typeface="monospace"
+                        android:textSize="@dimen/size11" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size1"
+            android:background="@color/black_color" />
+
+        <ListView
+            android:id="@+id/list_cmt"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>
